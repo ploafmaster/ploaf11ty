@@ -1,0 +1,9 @@
+---
+layout: layouts/base.njk
+permalink: /
+---
+<p>Hey there everybody! This is my foray into playing with a static site generator as a means to learning HTML and CSS. My hope is that, by incrementally improving the look, feel, and accessibility of my little play space, I will be able to improve my basic skills to the point of making something useful.</p>
+<p>My long term goal is to, hopefully, migrate my WordPress content to this site so I'm working on some of my own real content.</p>
+
+{% set postslist = collections.posts %}
+{% include "layouts/postslist.njk" %}
