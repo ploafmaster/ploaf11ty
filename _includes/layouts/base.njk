@@ -1,14 +1,21 @@
-<html>
+<html lang="en">
   <head>
 	<title>Ploaf's Experimental 11ty Site</title>
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
 
   <body>
-	<h1>
-	    But whatever it is, it's going to be in my experimental film!
-	</h1>
-	{{ content | safe }}
+	<header>
+		<h1>
+	    	But whatever it is, it's going to be in my experimental film!
+		</h1>
+	</header>
+	<main>
+		{{ content | safe }}
+	</main>
+	<footer>
+		Copyright The Master of Ploaf, this year and forever.
+	</footer>		
 	<script>
 		if (window.netlifyIdentity) {
 		  window.netlifyIdentity.on("init", user => {
