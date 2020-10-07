@@ -1,0 +1,54 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	margin: 0px;
+}
+
+header {
+	font-family: Georgia, serif;
+	font-size: 24px;
+	background-color: #fcd303;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	bottom: 15px;
+}
+
+@media screen and (min-width: 400px) {
+  header {
+	font-size: calc(24px + 6 * ((100vw - 400px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  header {
+	font-size: 48px;
+  }
+}
+
+nav, main {
+	max-width: 650px;
+	margin: auto;
+}
+
+nav {
+	font-size: 24px;
+}
+
+ul {
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	padding: 0 0.5em 0 0;
+}
+
+main p, li {
+	max-width: 35em;
+}
+
+footer {
+	font-family: Georgia, serif;
+	font-size: 16px;
+	text-align: center;
+}

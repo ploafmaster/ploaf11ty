@@ -1,18 +1,45 @@
-<html>
+<html lang="en">
   <head>
 	<title>Ploaf's Experimental 11ty Site</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	<link rel="stylesheet" href="/css/main.css">
   </head>
 
   <body>
-	<h1>
-	    But whatever it is, it's going to be in my experimental film!
-	</h1>
-	<h2>Ploaf Sample Posty Times</h2>
+	<header>
+		<h1>
+	    	Ploafmaster General
+		</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/posts">Blog</a></li>
+		</ul>
+	</nav>
+	<main>
+		<h2>Ploaf Sample Posty Times</h2>
 <h3>05-10-20</h3>
 <img src="/images/uploads/dyspeptic.jpg" alt="/images/uploads/dyspeptic.jpg"></img>
 <p><p>This is just a test post, and because it's Markdown, I should expect to see new paragraphs when I have new lines in the document.</p>
 <p>So if this runs right after the first sentence, something isn't right :-P</p>
 </p>
+	</main>
+	<footer>
+		Copyright The Master of Ploaf, this year and forever.
+	</footer>		
+	<script>
+		if (window.netlifyIdentity) {
+		  window.netlifyIdentity.on("init", user => {
+			if (!user) {
+			  window.netlifyIdentity.on("login", () => {
+				document.location.href = "/admin/";
+			  });
+			}
+		  });
+		}
+	  </script>
   </body>
 
 </html>
