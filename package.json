@@ -13,6 +13,7 @@
     "@11ty/eleventy": "^0.11.0"
   },
   "dependencies": {
-    "luxon": "^1.25.0"
+    "luxon": "^1.25.0",
+    "object-path": "^0.11.5"
   }
 }
